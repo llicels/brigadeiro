@@ -172,7 +172,7 @@ body {
     position: relative;
     width: 220px;
     height: 210px;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
 }
 
 .star-bg {
@@ -186,9 +186,9 @@ body {
 
 .profile-img {
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-55%, -50%);
+    top: 70%;
+    left: 48%;
+    transform: translate(-50%, -50%);
     width: 110%;
     height: 110%;
     object-fit: cover;
