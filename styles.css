@@ -190,9 +190,8 @@ body {
     position: absolute;
     width: 351px;
     height: 235px;
-    left: 76px;
-    top: 352px;
-    object-fit: cover;
+    left: -59px;
+    top: -12px;
     z-index: 1;
     mask-image: url('assets/star-mask.svg');
     mask-size: 246px 232px;
