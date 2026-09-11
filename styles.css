@@ -139,56 +139,65 @@ body {
     margin-bottom: 40px;
 }
 
-.content-2 {
+/* TEAM GRID */
+.team-grid {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
-    gap: 60px;
+    flex-wrap: wrap;
 }
 
-.image-block-2 {
-    position: relative;
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px;
     flex-shrink: 0;
-    width: 350px;
-    height: 350px;
 }
 
-/* Pink spray - SVG from Figma */
-.pink-glow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 110%;
-    height: 110%;
-    object-fit: contain;
-    z-index: 0;
+.star-wrapper {
+    position: relative;
+    width: 200px;
+    height: 190px;
+    margin-bottom: 16px;
 }
 
-.brigadeiro-img-2 {
+.star-bg {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+}
+
+.member-name {
+    font-family: 'Eczar', serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--dark-red);
+    line-height: 1.2;
+    margin-bottom: 8px;
     z-index: 1;
 }
 
-.text-block-2 {
-    flex: 1;
-    max-width: 55%;
+.member-line {
+    width: 80px;
+    height: 4px;
+    background-color: var(--sage-green);
+    border-radius: 2px;
+    margin-bottom: 12px;
 }
 
-.body-text-2 {
-    font-size: 24px;
-    line-height: 1.5;
+.member-desc {
+    font-size: 16px;
+    line-height: 1.4;
     color: var(--dark);
-    max-width: 670px;
 }
 
 /* RESPONSIVE - Tablet */
@@ -214,16 +223,8 @@ body {
     .image-block {
         margin-top: 0;
     }
-    .content-2 {
-        flex-direction: column-reverse;
-        text-align: center;
+    .team-grid {
         gap: 30px;
-    }
-    .text-block-2 {
-        max-width: 100%;
-    }
-    .body-text-2 {
-        max-width: 100%;
     }
 }
 
@@ -249,10 +250,10 @@ body {
     .sobre-title {
         font-size: 50px;
     }
-    .body-text, .body-text-2 {
+    .body-text {
         font-size: 18px;
     }
-    .image-block, .image-block-2 {
+    .image-block {
         width: 250px;
         height: 250px;
     }
@@ -267,5 +268,21 @@ body {
     .page-2 {
         height: auto;
         min-height: 100vh;
+    }
+    .team-grid {
+        gap: 20px;
+    }
+    .team-card {
+        width: 160px;
+    }
+    .star-wrapper {
+        width: 150px;
+        height: 140px;
+    }
+    .member-name {
+        font-size: 22px;
+    }
+    .member-desc {
+        font-size: 14px;
     }
 }

@@ -1,7 +1,6 @@
 (() => {
     const orangeSpray = document.getElementById('orangeSpray');
     const brigadeiroImg1 = document.querySelector('.brigadeiro-img');
-    const brigadeiroImg2 = document.querySelector('.brigadeiro-img-2');
     const page1 = document.querySelector('.page-1');
     const page2 = document.querySelector('.page-2');
 
