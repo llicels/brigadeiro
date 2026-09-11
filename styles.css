@@ -144,7 +144,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
@@ -156,7 +156,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 220px;
+    width: 260px;
     flex-shrink: 0;
 }
 
@@ -170,8 +170,8 @@ body {
 
 .star-wrapper {
     position: relative;
-    width: 200px;
-    height: 190px;
+    width: 220px;
+    height: 210px;
     margin-bottom: 16px;
 }
 
@@ -188,17 +188,17 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-55%, -55%);
-    width: 100%;
-    height: 100%;
+    transform: translate(-55%, -50%);
+    width: 110%;
+    height: 110%;
     object-fit: cover;
     z-index: 1;
     mask-image: url('assets/star-pink-small.svg');
-    mask-size: contain;
+    mask-size: 100% 100%;
     mask-repeat: no-repeat;
     mask-position: center;
     -webkit-mask-image: url('assets/star-pink-small.svg');
-    -webkit-mask-size: contain;
+    -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
 }
@@ -211,6 +211,7 @@ body {
     line-height: 1.1;
     margin-bottom: 8px;
     z-index: 1;
+    white-space: nowrap;
 }
 
 .member-line {
@@ -304,10 +305,10 @@ body {
         min-height: 100vh;
     }
     .team-grid {
-        gap: 16px;
+        gap: 12px;
     }
     .team-card {
-        width: 160px;
+        width: 170px;
     }
     .team-card:nth-child(odd) {
         margin-top: 30px;
@@ -320,10 +321,10 @@ body {
         height: 140px;
     }
     .member-name {
-        font-size: 36px;
+        font-size: 32px;
     }
     .member-desc {
-        font-size: 14px;
-        max-width: 150px;
+        font-size: 13px;
+        max-width: 160px;
     }
 }
