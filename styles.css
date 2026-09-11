@@ -144,7 +144,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
@@ -158,6 +158,14 @@ body {
     text-align: center;
     width: 220px;
     flex-shrink: 0;
+}
+
+.team-card:nth-child(odd) {
+    margin-top: 0;
+}
+
+.team-card:nth-child(even) {
+    margin-top: 80px;
 }
 
 .star-wrapper {
@@ -176,18 +184,30 @@ body {
     object-fit: contain;
 }
 
+.profile-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 140%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 50%;
+}
+
 .member-name {
     font-family: 'Eczar', serif;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 48px;
     color: var(--dark-red);
-    line-height: 1.2;
+    line-height: 1.1;
     margin-bottom: 8px;
     z-index: 1;
 }
 
 .member-line {
-    width: 80px;
+    width: 100px;
     height: 4px;
     background-color: var(--sage-green);
     border-radius: 2px;
@@ -198,6 +218,7 @@ body {
     font-size: 16px;
     line-height: 1.4;
     color: var(--dark);
+    max-width: 200px;
 }
 
 /* RESPONSIVE - Tablet */
@@ -224,7 +245,10 @@ body {
         margin-top: 0;
     }
     .team-grid {
-        gap: 30px;
+        gap: 20px;
+    }
+    .team-card:nth-child(even) {
+        margin-top: 40px;
     }
 }
 
@@ -270,19 +294,23 @@ body {
         min-height: 100vh;
     }
     .team-grid {
-        gap: 20px;
+        gap: 16px;
     }
     .team-card {
         width: 160px;
+    }
+    .team-card:nth-child(even) {
+        margin-top: 30px;
     }
     .star-wrapper {
         width: 150px;
         height: 140px;
     }
     .member-name {
-        font-size: 22px;
+        font-size: 36px;
     }
     .member-desc {
         font-size: 14px;
+        max-width: 150px;
     }
 }
