@@ -193,11 +193,11 @@ body {
     left: -59px;
     top: -12px;
     z-index: 1;
-    mask-image: url('assets/star-mask.svg');
+    mask-image: url('assets/star-pink-small.svg');
     mask-size: 246px 232px;
     mask-repeat: no-repeat;
     mask-position: center;
-    -webkit-mask-image: url('assets/star-mask.svg');
+    -webkit-mask-image: url('assets/star-pink-small.svg');
     -webkit-mask-size: 246px 232px;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
