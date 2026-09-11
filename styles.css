@@ -186,11 +186,11 @@ body {
 
 .profile-img {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 48%;
     transform: translate(-50%, -50%);
-    width: 110%;
-    height: 110%;
+    width: 130%;
+    height: 130%;
     object-fit: cover;
     z-index: 1;
     mask-image: url('assets/star-pink-small.svg');
