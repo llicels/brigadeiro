@@ -188,10 +188,10 @@ body {
 /* image 1 */
 .profile-img {
     position: absolute;
-    width: 246px;
-    height: 232px;
-    left: 0;
-    top: 0;
+    width: 220px;
+    height: 208px;
+    left: 13px;
+    top: 12px;
     object-fit: cover;
     z-index: 1;
     mask-image: url('assets/star-pink-small.svg');
