@@ -173,7 +173,7 @@ body {
     width: 220px;
     height: 210px;
     margin-bottom: 12px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .star-bg {
@@ -183,6 +183,25 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* image 1 */
+.profile-img {
+    position: absolute;
+    width: 351px;
+    height: 235px;
+    left: 76px;
+    top: 352px;
+    object-fit: cover;
+    z-index: 1;
+    mask-image: url('assets/star-mask.svg');
+    mask-size: 246px 232px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url('assets/star-mask.svg');
+    -webkit-mask-size: 246px 232px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
 }
 
 .member-name {
