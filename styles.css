@@ -161,11 +161,11 @@ body {
 }
 
 .team-card:nth-child(odd) {
-    margin-top: 0;
+    margin-top: 80px;
 }
 
 .team-card:nth-child(even) {
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 .star-wrapper {
@@ -188,7 +188,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-55%, -55%);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -254,8 +254,11 @@ body {
     .team-grid {
         gap: 20px;
     }
-    .team-card:nth-child(even) {
+    .team-card:nth-child(odd) {
         margin-top: 40px;
+    }
+    .team-card:nth-child(even) {
+        margin-top: 0;
     }
 }
 
@@ -306,8 +309,11 @@ body {
     .team-card {
         width: 160px;
     }
-    .team-card:nth-child(even) {
+    .team-card:nth-child(odd) {
         margin-top: 30px;
+    }
+    .team-card:nth-child(even) {
+        margin-top: 0;
     }
     .star-wrapper {
         width: 150px;
