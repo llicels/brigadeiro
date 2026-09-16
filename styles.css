@@ -230,6 +230,109 @@ body {
     max-width: 200px;
 }
 
+/* PAGE 3 - DOCUMENTAÇÃO */
+.page-3 {
+    min-height: 100vh;
+    background-color: var(--orange);
+    position: relative;
+    padding: 56px 40px 80px;
+}
+
+.documentacao-title {
+    font-family: 'Eczar', serif;
+    font-weight: 800;
+    font-size: 132px;
+    color: var(--maroon);
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 52px;
+}
+
+.documents-grid {
+    display: flex;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.document-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: min(100%, 760px);
+    padding: 34px 38px;
+    background-color: var(--pink);
+    border: 3px solid var(--maroon);
+    border-radius: 24px;
+    box-shadow: 10px 10px 0 var(--sage-green);
+}
+
+.document-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 108px;
+    height: 130px;
+    background-color: var(--maroon);
+    color: var(--pink);
+    font-family: 'Eczar', serif;
+    font-size: 31px;
+    border-radius: 12px;
+    transform: rotate(-4deg);
+}
+
+.document-info {
+    flex: 1;
+}
+
+.document-info h3 {
+    font-family: 'Eczar', serif;
+    font-size: 38px;
+    line-height: 1.1;
+    color: var(--maroon);
+    margin-bottom: 12px;
+}
+
+.document-info p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.45;
+    margin-bottom: 22px;
+}
+
+.document-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.document-link {
+    display: inline-block;
+    padding: 11px 18px;
+    background-color: var(--maroon);
+    color: var(--pink);
+    border: 2px solid var(--maroon);
+    border-radius: 999px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.document-link:hover {
+    transform: translateY(-2px);
+}
+
+.document-link-outline {
+    background-color: transparent;
+    color: var(--maroon);
+}
+
+.document-link-outline:hover {
+    background-color: var(--maroon);
+    color: var(--pink);
+}
+
 /* RESPONSIVE - Tablet */
 @media (max-width: 1024px) {
     .title {
@@ -286,6 +389,35 @@ body {
     .sobre-title {
         font-size: 50px;
     }
+    .page-3 {
+        padding: 44px 20px 70px;
+    }
+    .documentacao-title {
+        font-size: 54px;
+        margin-bottom: 36px;
+    }
+    .document-card {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+        padding: 26px 22px;
+        box-shadow: 6px 6px 0 var(--sage-green);
+    }
+    .document-badge {
+        width: 82px;
+        height: 96px;
+        font-size: 25px;
+    }
+    .document-info h3 {
+        font-size: 30px;
+    }
+    .document-info p {
+        font-size: 16px;
+    }
+    .document-link {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
     .body-text {
         font-size: 18px;
     }
@@ -328,4 +460,18 @@ body {
         font-size: 13px;
         max-width: 160px;
     }
+}
+
+.site-footer {
+    width: 100%;
+    padding: 24px 20px;
+    background-color: var(--maroon);
+    border-top: 4px solid var(--sage-green);
+    color: var(--pink);
+    text-align: center;
+    font-size: 16px;
+}
+
+.site-footer p {
+    margin: 0;
 }

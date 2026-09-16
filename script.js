@@ -3,8 +3,9 @@
     const brigadeiroImg1 = document.querySelector('.brigadeiro-img');
     const page1 = document.querySelector('.page-1');
     const page2 = document.querySelector('.page-2');
+    const page3 = document.querySelector('.page-3');
 
-    if (!orangeSpray || !page1 || !page2) return;
+    if (!orangeSpray || !page1 || !page2 || !page3) return;
 
     let ticking = false;
 
@@ -59,6 +60,23 @@
         const g2 = Math.round(lerp(224, 157, transEased));
         const b2 = Math.round(lerp(236, 81, transEased));
         page2.style.backgroundColor = `rgb(${r2}, ${g2}, ${b2})`;
+
+        // Transição da seção Sobre nós para Documentação
+        const page3Rect = page3.getBoundingClientRect();
+        const page3Entry = 1 - (page3Rect.top / viewportHeight);
+
+        const docsStart = 0.5;
+        const docsEnd = 0.95;
+        const rawDocsTransition = (page3Entry - docsStart) / (docsEnd - docsStart);
+        const docsProgress = Math.min(Math.max(rawDocsTransition, 0), 1);
+        const docsEased = easeInOutCubic(docsProgress);
+
+        // Laranja → verde-sálvia
+        const r3 = Math.round(lerp(240, 181, docsEased));
+        const g3 = Math.round(lerp(157, 196, docsEased));
+        const b3 = Math.round(lerp(81, 161, docsEased));
+
+        page3.style.backgroundColor = `rgb(${r3}, ${g3}, ${b3})`;
     }
 
     window.addEventListener('scroll', () => {
